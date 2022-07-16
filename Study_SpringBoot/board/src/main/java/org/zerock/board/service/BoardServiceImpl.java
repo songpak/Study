@@ -25,6 +25,7 @@ public class BoardServiceImpl implements BoardService{
 
     private final ReplyRepository replyRepository; //새롭게 추가
 
+
     @Override
     public Long register(BoardDTO dto) {
         log.info(dto);

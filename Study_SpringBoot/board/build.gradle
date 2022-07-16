@@ -11,6 +11,8 @@ plugins {
     id 'java'
     id 'war'
     id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10' //추가된 항목 querydsl
+
+
 }
 
 group = 'org.zerock'

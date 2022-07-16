@@ -10,6 +10,7 @@ import org.zerock.board.repository.search.SearchBoardRepository;
 
 import java.util.List;
 
+
 public interface BoardRepository extends JpaRepository<Board,Long>, SearchBoardRepository {
     //한개의 로우(Object) 내에 Object[]로 나옴
     @Query("select b,w from Board b left join b.writer w where b.bto =:bto")
@@ -32,3 +33,5 @@ public interface BoardRepository extends JpaRepository<Board,Long>, SearchBoardR
             "WHERE b.bto = :bto")
     Object getBoardByBto(@Param("bto") Long bto);
 }
+
+
