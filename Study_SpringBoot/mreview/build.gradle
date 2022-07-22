@@ -45,6 +45,12 @@ dependencies {
     // 3. querydsl dependencies 추가
     implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
     implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+
+    // thumbnail library
+    // https://mvnrepository.com/artifact/net.coobird/thumbnailator
+    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.17'
+
+
 }
 
 tasks.named('test') {
